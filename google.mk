@@ -28,10 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
 PRODUCT_COPY_FILES += \
-       vendor/google/prebuilt/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+	vendor/google/prebuilt/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 else
 PRODUCT_COPY_FILES += \
-       vendor/google/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+	vendor/google/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 endif
 PRODUCT_COPY_FILES += \
 	vendor/google/prebuilt/system/etc/resolv.conf:system/etc/resolv.conf
