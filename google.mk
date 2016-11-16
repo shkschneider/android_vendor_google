@@ -14,27 +14,22 @@
 # limitations under the License.
 #
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.com.google.clientidbase=android-google
+PRODUCT_PROPERTY_OVERRIDES += ro.com.google.clientidbase=android-google
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	keyguard.no_require_sim=true \
-	ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-	ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-	ro.com.android.wifi-watchlist=GoogleGuest \
-	ro.setupwizard.enterprise_mode=1 \
-	ro.com.android.dateformat=MM-dd-yyyy \
-	ro.com.android.dataroaming=false
+PRODUCT_PROPERTY_OVERRIDES += keyguard.no_require_sim=true
+PRODUCT_PROPERTY_OVERRIDES += ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+PRODUCT_PROPERTY_OVERRIDES += ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+PRODUCT_PROPERTY_OVERRIDES += ro.com.android.wifi-watchlist=GoogleGuest
+PRODUCT_PROPERTY_OVERRIDES += ro.setupwizard.enterprise_mode=1
+PRODUCT_PROPERTY_OVERRIDES += ro.com.android.dateformat=MM-dd-yyyy
+PRODUCT_PROPERTY_OVERRIDES += ro.com.android.dataroaming=false
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
-PRODUCT_COPY_FILES += \
-	vendor/google/prebuilt/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 else
-PRODUCT_COPY_FILES += \
-	vendor/google/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 endif
-PRODUCT_COPY_FILES += \
-	vendor/google/prebuilt/system/etc/resolv.conf:system/etc/resolv.conf
+PRODUCT_COPY_FILES += vendor/google/prebuilt/system/etc/resolv.conf:system/etc/resolv.conf
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/google/overlay
 
