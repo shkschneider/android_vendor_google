@@ -31,6 +31,9 @@ PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib/libjni_latinime.so:syste
 endif
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/etc/resolv.conf:system/etc/resolv.conf
 
+PRODUCT_COPY_FILES += vendor/google/prebuilt/system/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd
+PRODUCT_COPY_FILES += vendor/google/prebuilt/system/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/google/overlay
 
 # EOF
