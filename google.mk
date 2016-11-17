@@ -31,8 +31,10 @@ PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib/libjni_latinime.so:syste
 endif
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/etc/resolv.conf:system/etc/resolv.conf
+ifeq ($(PRODUCT_DEVICE),shamu)
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/google/overlay
 
