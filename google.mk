@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib64/libjni_latinime.so:sys
 else
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 endif
+PRODUCT_COPY_FILES += vendor/google/prebuilt/system/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/etc/resolv.conf:system/etc/resolv.conf
-
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd
 PRODUCT_COPY_FILES += vendor/google/prebuilt/system/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
